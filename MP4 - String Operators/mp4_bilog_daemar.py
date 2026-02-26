@@ -1,8 +1,9 @@
-# Word Pyramid
+# Full name
 
-word = input("Enter a word:\n")
-number = int(input("Enter a number:\n"))
+first = input("Enter your first name:\n").strip().capitalize()
+middle = input("Enter your middle name:\n").strip().capitalize()
+last = input("Enter your last name:\n").strip().capitalize()
 
-print("Output:")
-for i in range(1, number + 1):
-    print(word * i)
+formatted_name = f"{last}, {first} {middle[0]}."
+
+print("Formatted Name:", formatted_name)
